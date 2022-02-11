@@ -1,0 +1,19 @@
+{
+  "n_repeat": 30,
+  "data": {
+    "name": "maze",
+    "n_train": [300, 500, 700, 900],
+    "rotation": 0.4,
+    "latent_noise" : 0.2,
+    "obs_noise" : 0.2,
+    "image_noise" : 0.1,
+    "n_test": 200
+  },
+  "model": {
+    "name": "RNN",
+    "n_filter": 10,
+    "hidden_dim": 64,
+    "n_iter": 300,
+    "earlystop": true
+  }
+}

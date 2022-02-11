@@ -1,0 +1,21 @@
+{
+  "n_repeat": 30,
+  "data": {
+    "name": "dsprite",
+    "n_train": [100, 300, 500, 700, 900],
+    "eta": 0.3,
+    "beta" : 0.0,
+    "freq": 8,
+    "latent_noise" : 0.2,
+    "obs_noise" : 0.2,
+    "image_noise": 0.1,
+    "n_test": 200
+  },
+  "model": {
+    "name": "KBF",
+    "kernel_bayes_rule": ["proposal", "original"],
+    "scale": [0.5, 0.25, 0.1, 1.0, 2.0, 4.0],
+    "reg2": [0.0005, 0.0001, 0.00005],
+    "use_adaptive_feature": [true, false]
+  }
+}
